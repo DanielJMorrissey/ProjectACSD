@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 function App() {
 //business logic JS goes here if needed...
   
-
+//ciara test comment
 //RETURN this JSX to UI [Everything below is wrapped in the Router so that the Navbar toggles between our different sections/views]
   return (
     <Router>
