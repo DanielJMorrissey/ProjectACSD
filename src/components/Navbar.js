@@ -7,11 +7,11 @@ function Navbar(){
 
     //RETURN the JSX below to the UI  
     return (
-        <div>
-            <Link to="/">Home</Link> |
-            <Link to="/videos">Videos</Link> |
-            <Link to="/setlists">Setlists</Link> |
-            <Link to="/contact">Contact</Link>
+        <div className="navFlex">
+            <Link className="link" to="/">Home</Link> |
+            <Link className="link" to="/videos">Videos</Link> |
+            <Link className="link" to="/setlists">Setlists</Link> |
+            <Link className="link" to="/contact">Contact</Link>
 
         </div>
     )
