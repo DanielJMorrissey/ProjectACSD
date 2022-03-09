@@ -13,13 +13,6 @@ function Videos(){
         setSelect(e.target.value)
     }
 
-    // need to handle event when nothing is sent and first load
-    /*useEffect(async function(){
-        console.log(select)
-        var data = await axios.get("https://youtube.googleapis.com/youtube/v3/search?maxResults=10&q=" + select + "&videoCaption=any&key=" + api)
-        setVideo(data.data.items)
-    }, [select])*/
-
     async function handleSearch(e){
         e.preventDefault()
         var data = await axios.get("https://youtube.googleapis.com/youtube/v3/search?maxResults=10&q=" + select + "&videoCaption=any&key=" + api)
@@ -29,10 +22,10 @@ function Videos(){
     //RETURN the JSX below to the UI   
        return (
            <div>
-               <form>
-                    <label htmlFor="select">Select a band</label>
-                    <input onChange={handleInput} value={select}/>
-                    <button onClick={handleSearch}>Search For Videos</button>
+               <form className="videoListForm">
+                    <label className="videoListLabel" htmlFor="select">Select a band</label>
+                    <input className="videoListInput" onChange={handleInput} value={select}/>
+                    <button className="videoListBtn" onClick={handleSearch}>Search For Videos</button>
                </form>
                 <VideosList vidslist={video} />
            </div>
