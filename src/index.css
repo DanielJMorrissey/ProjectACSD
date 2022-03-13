@@ -100,3 +100,7 @@ iframe{
 .videoListBtn{
   padding: 1em;
 }
+
+.navBarComponent {
+    width:100%!important;
+}

@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navigation from './components/Navbar';
 import Home from './components/Home';
 import Videos from './components/Videos';
 import Setlists from './components/Setlists';
@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+        <Navigation />
         <Switch>
 
           <Route exact path ="/">
